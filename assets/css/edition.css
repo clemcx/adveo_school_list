@@ -1,0 +1,50 @@
+.box {
+  display: flex;
+  /* width: 45vw; */
+  height: 14vh;
+  margin: 0.5em;
+  border: 1px solid;
+  border-color: rgb(194, 220, 217);
+  border-radius: 7px;
+  padding: 0.25em;
+  justify-content: space-around;
+  align-items: center;
+}
+.boxTitle {
+  margin-bottom: 0;
+  color: rgb(97, 155, 148);
+}
+.attributes {
+  padding: 0.5em;
+}
+
+#tableProduct {
+  /* border: 1px solid;
+    border-color: rgb(194, 220, 217); */
+  font-size: 12px;
+  height: 63vh;
+  overflow-y: scroll;
+  /*  */
+}
+.label {
+  margin-bottom: 0;
+}
+
+.attributes {
+  display: flex;
+  flex-direction: column;
+}
+
+.removeBtn {
+  border-radius: 5px;
+  font-family: var(--font-family);
+  border: 2px solid;
+  border-color: rgb(106, 141, 137);
+  text-decoration: none;
+  align-content: center;
+}
+.removeBtn:hover {
+  background: #5ba39b;
+  color: white;
+  text-decoration: none;
+}
