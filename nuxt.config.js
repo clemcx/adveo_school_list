@@ -51,5 +51,22 @@ export default {
       aggregateTimeout: 300,
       poll: 1000
     }
-  }
+  },
+  target: 'static', // la valeur par défaut est 'server'
+
+  generate: {
+    subFolders: false
+  },
+
+  build: {
+    html: {
+      minify: false
+    }
+  },
+
+  router: {
+    base: '.'
+  },
+
+
 };
