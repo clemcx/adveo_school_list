@@ -72,9 +72,9 @@ export default {
     }
   },
 
-  // router: {
-  //   base: '.'
-  // },
+  router: {
+    base: process.env.BASE_URL,
+  },
 
 
 };
