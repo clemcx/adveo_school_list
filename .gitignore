@@ -91,3 +91,6 @@ sw.*
 assets/products_attributes/Adveo_Attributs-Eco-responsable_Web.csv
 assets/products_attributes/Adveo_Attributs-Made-in-France_Web.csv
 assets/products_attributes/Adveo_Attributs1erPrix_Scolaire.csv
+
+#static build with npm run generate
+dist/*
