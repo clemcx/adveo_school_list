@@ -40,7 +40,7 @@
         <div class="formInput">
           <label class="formInputTitle">
             <div class="col-sm-2">Fichier CSV</div>
-            <input type="file" id="file" ref="file" />
+            <input type="file" accept=".csv" id="file" ref="file" />
           </label>
         </div>
         <div>

@@ -136,7 +136,8 @@ export default {
 
     referenceList.forEach(function(item, index) {
       const label = item.label.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-      let url = `http://doors.retailshake.com:32178/products/_like_this?q=${label}&company_name=Calipage&limit=3`;
+      let url = `/api/products/_like_this?q=${label}&company_name=Calipage&limit=3`;
+      console.log(url)
       if (item.brands[0]) url += `&brand_name=${item.brands[0]}`;
       if (item.maxPrice) url += `&price_range=0,${item.maxPrice}`;
       const attributes = [];
