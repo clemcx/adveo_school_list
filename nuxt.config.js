@@ -42,6 +42,14 @@ export default {
     "@nuxtjs/axios",
     "nuxt-vuex-localstorage"
   ],
+  axios: { proxy: true },
+  proxy: {
+    '/api': {
+      target: 'http://doors.retailshake.com:32178',
+      changeOrigin: true,
+      pathRewrite: { '^/api': '/' },
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
@@ -52,7 +60,7 @@ export default {
       poll: 1000
     }
   },
-  target: 'static', // la valeur par défaut est 'server'
+  // target: 'static', // la valeur par défaut est 'server'
 
   generate: {
     subFolders: false
@@ -64,9 +72,9 @@ export default {
     }
   },
 
-  router: {
-    base: '.'
-  },
+  // router: {
+  //   base: '.'
+  // },
 
 
 };
