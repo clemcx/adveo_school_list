@@ -1,3 +1,5 @@
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
 <template>
   <section>
     <div class="header d-flex">
